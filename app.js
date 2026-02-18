@@ -1,3 +1,4 @@
+alert("APP CARGADA");
 const supabase = window.supabase.createClient(
 "https://vmxgzzqfbrbwcgkophzzp.supabase.co",
 "sb_publishable_KOA9TR0SKAh--TLh37KSIw_pPjm-GzE"
