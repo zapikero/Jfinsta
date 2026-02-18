@@ -1,11 +1,14 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <title>Admin Instalaciones JF</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="./style.css">
 
+<!-- Librería Supabase válida para navegador -->
+<script src="https://unpkg.com/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 </head>
+
 <body>
 
 <div id="login" class="center">
@@ -34,17 +37,8 @@
 <section id="lista"></section>
 </div>
 
-<!-- Supabase primero -->
-<script src="https://unpkg.com/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<!-- Carga correcta desde subcarpeta GitHub Pages -->
+<script src="./app.js?v=3"></script>
 
-<!-- Esperar a que cargue -->
-<script>
-window.addEventListener("load", function(){
-  var script = document.createElement("script");
-  script.src = "app.js?v=2";
-  document.body.appendChild(script);
-});
-</script>
 </body>
-</html>
-                          
+</html>          
