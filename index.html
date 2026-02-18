@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>Admin Instalaciones JF</title>
 <link rel="stylesheet" href="style.css">
-<script src="https://unpkg.com/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+
 </head>
 <body>
 
@@ -34,7 +34,17 @@
 <section id="lista"></section>
 </div>
 
-<script src="app.js"></script>
+<!-- Supabase primero -->
+<script src="https://unpkg.com/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+
+<!-- Esperar a que cargue -->
+<script>
+window.addEventListener("load", function(){
+  var script = document.createElement("script");
+  script.src = "app.js?v=2";
+  document.body.appendChild(script);
+});
+</script>
 </body>
 </html>
                           
